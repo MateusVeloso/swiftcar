@@ -216,7 +216,7 @@ class AppearanceTab extends Component {
               </ListItemIcon>
 
               <FormControl disabled={performingAction} fullWidth>
-                <InputLabel>Primary color</InputLabel>
+                <InputLabel>Primeira Cor</InputLabel>
                 <Select
                   value={theme.primaryColor.id}
 
@@ -240,7 +240,7 @@ class AppearanceTab extends Component {
               </ListItemIcon>
 
               <FormControl disabled={performingAction} fullWidth>
-                <InputLabel>Secondary color</InputLabel>
+                <InputLabel>Segunda cor</InputLabel>
                 <Select
                   value={theme.secondaryColor.id}
 
@@ -264,7 +264,7 @@ class AppearanceTab extends Component {
               </ListItemIcon>
 
               <FormControl disabled={performingAction} fullWidth>
-                <InputLabel>Type</InputLabel>
+                <InputLabel>Tipo</InputLabel>
                 <Select
                   value={theme.type.id}
 
@@ -291,8 +291,8 @@ class AppearanceTab extends Component {
             </ListItemIcon>
 
             <ListItemText
-              primary="Reset theme"
-              secondary="Changes to the theme will be reset"
+              primary="Resetar tema"
+              secondary="Todas as mudanças serão perdidas"
             />
 
             <ListItemSecondaryAction>
@@ -302,7 +302,7 @@ class AppearanceTab extends Component {
                 variant="contained"
 
                 onClick={this.handleResetClick}>
-                Reset
+                Resetar
               </Button>
             </ListItemSecondaryAction>
           </ListItem>

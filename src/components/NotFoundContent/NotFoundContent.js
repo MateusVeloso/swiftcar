@@ -35,11 +35,11 @@ class NotFoundContent extends Component {
     return (
       <EmptyState
         icon={<FindIcon className={classes.emptyStateIcon} color="action" />}
-        title="Content Not Found"
-        description="The requested URL was not found on this server"
+        title="404"
+        description="Arquivo não encontrado"
         button={
           <Fab className={classes.button} color="secondary" component={Link} to="/" variant="extended">
-            <HomeIcon className={classes.buttonIcon} /> Go Home
+            <HomeIcon className={classes.buttonIcon} /> Voltar ao Início
           </Fab>
         }
       />

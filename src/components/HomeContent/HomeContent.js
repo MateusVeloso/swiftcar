@@ -38,7 +38,7 @@ class HomeContent extends Component {
       return (
         <EmptyState
           icon={<HomeIcon className={classes.emptyStateIcon} color="action" />}
-          title="Home"
+          title="Olá, seja bem vindo!"
         />
       );
     }
@@ -46,13 +46,13 @@ class HomeContent extends Component {
     return (
       <EmptyState
         title={process.env.REACT_APP_NAME}
-        description="The three musketeers, all in one pack in the form of a boilerplate app"
-        button={
-          <Fab className={classes.button} color="secondary" href="https://github.com/Phoqe/react-material-ui-firebase" rel="noopener noreferrer" target="_blank" variant="extended">
-            <GitHubCircleIcon className={classes.buttonIcon} />
-            GitHub
-          </Fab>
-        }
+        description="Loja virtual de vendas de carro em construção"
+        // button={
+        //   <Fab className={classes.button} color="secondary" href="https://github.com/Phoqe/react-material-ui-firebase" rel="noopener noreferrer" target="_blank" variant="extended">
+        //     <GitHubCircleIcon className={classes.buttonIcon} />
+        //     GitHub
+        //   </Fab>
+        // }
       />
     );
   }

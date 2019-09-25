@@ -106,8 +106,8 @@ class Bar extends Component {
               </IconButton>
 
               <Menu anchorEl={menu.anchorEl} open={Boolean(menu.anchorEl)} onClose={this.closeMenu}>
-                <MenuItem disabled={performingAction} onClick={this.handleSettingsClick}>Settings</MenuItem>
-                <MenuItem disabled={performingAction} onClick={this.handleSignOutClick}>Sign out</MenuItem>
+                <MenuItem disabled={performingAction} onClick={this.handleSettingsClick}>Configurações</MenuItem>
+                <MenuItem disabled={performingAction} onClick={this.handleSignOutClick}>Sair</MenuItem>
               </Menu>
             </>
           }
@@ -115,10 +115,10 @@ class Bar extends Component {
           {!signedIn &&
             <>
               <Box mr={1}>
-                <Button color="secondary" disabled={performingAction} variant="contained" onClick={onSignUpClick}>Sign Up</Button>
+                <Button color="secondary" disabled={performingAction} variant="contained" onClick={onSignUpClick}>Cadastre-se</Button>
               </Box>
 
-              <Button color="secondary" disabled={performingAction} variant="contained" onClick={onSignInClick}>Sign In</Button>
+              <Button color="secondary" disabled={performingAction} variant="contained" onClick={onSignInClick}>Entrar</Button>
             </>
           }
         </Toolbar>

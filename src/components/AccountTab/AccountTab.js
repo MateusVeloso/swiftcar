@@ -838,7 +838,7 @@ class AccountTab extends Component {
                       <Box mr={1} clone>
                         <CloudUploadIcon />
                       </Box>
-                      Upload
+                      Salvar Imagem
                     </Button>
                   }
 
@@ -858,7 +858,7 @@ class AccountTab extends Component {
                           <Box mr={1} clone>
                             <PhotoIcon />
                           </Box>
-                          Choose...
+                          Escolher...
                         </Button>
                       </label>
                     </>
@@ -868,7 +868,7 @@ class AccountTab extends Component {
 
               <Grid item xs>
                 <Box textAlign="center">
-                  <Typography variant="body1">Profile Completion</Typography>
+                  <Typography variant="body1">Perfil Completo</Typography>
 
                   {profileCompletion === 0 &&
                     <Typography color="error" variant="h5">{profileCompletion}%</Typography>
@@ -886,7 +886,7 @@ class AccountTab extends Component {
 
               <Grid item xs>
                 <Box textAlign="center">
-                  <Typography variant="body1">Security Rating</Typography>
+                  <Typography variant="body1">Nível de Segurança</Typography>
 
                   {securityRating === 0 &&
                     <Typography color="error" variant="h5">{securityRating}%</Typography>
@@ -991,7 +991,7 @@ class AccountTab extends Component {
                   <Box mr={1} clone>
                     <CloudUploadIcon />
                   </Box>
-                  Upload
+                  Salvar Imagem
                 </Button>
               }
 
@@ -1011,7 +1011,7 @@ class AccountTab extends Component {
                       <Box mr={1} clone>
                         <PhotoIcon />
                       </Box>
-                      Choose...
+                      Escolher...
                     </Button>
                   </label>
                 </>
@@ -1021,7 +1021,7 @@ class AccountTab extends Component {
             <Grid container>
               <Grid item xs>
                 <Box textAlign="center">
-                  <Typography variant="body1">Profile Completion</Typography>
+                  <Typography variant="body1">Perfil Completo</Typography>
 
                   {profileCompletion === 0 &&
                     <Typography color="error" variant="h5">{profileCompletion}%</Typography>
@@ -1039,7 +1039,7 @@ class AccountTab extends Component {
 
               <Grid item xs>
                 <Box textAlign="center">
-                  <Typography variant="body1">Security Rating</Typography>
+                  <Typography variant="body1">Nível de Segurança</Typography>
 
                   {securityRating === 0 &&
                     <Typography color="error" variant="h5">{securityRating}%</Typography>
@@ -1068,7 +1068,7 @@ class AccountTab extends Component {
 
             {!userData.firstName &&
               <ListItemIcon>
-                <Tooltip title="No first name">
+                <Tooltip title="Nenhum nome">
                   <WarningIcon color="error" />
                 </Tooltip>
               </ListItemIcon>
@@ -1081,8 +1081,8 @@ class AccountTab extends Component {
                 disabled={performingAction}
                 error={!!(errors && errors.firstName)}
                 fullWidth
-                helperText={(errors && errors.firstName) ? errors.firstName[0] : 'Press Enter to change your first name'}
-                label="First name"
+                helperText={(errors && errors.firstName) ? errors.firstName[0] : 'Pressione enter para salvar seu nome'}
+                label="Nome"
                 placeholder={userData.firstName}
                 required
                 type="text"
@@ -1099,8 +1099,8 @@ class AccountTab extends Component {
             {showingField !== 'first-name' &&
               <>
                 <ListItemText
-                  primary="First name"
-                  secondary={userData.firstName ? userData.firstName : 'You don’t have a first name'}
+                  primary="Nome"
+                  secondary={userData.firstName ? userData.firstName : 'Você não tem um Nome'}
                 />
 
                 <ListItemSecondaryAction>
@@ -1137,7 +1137,7 @@ class AccountTab extends Component {
 
             {!userData.lastName &&
               <ListItemIcon>
-                <Tooltip title="No last name">
+                <Tooltip title="Nenhum sobrenome">
                   <WarningIcon color="error" />
                 </Tooltip>
               </ListItemIcon>
@@ -1150,8 +1150,8 @@ class AccountTab extends Component {
                 disabled={performingAction}
                 error={!!(errors && errors.lastName)}
                 fullWidth
-                helperText={(errors && errors.lastName) ? errors.lastName[0] : 'Press Enter to change your last name'}
-                label="Last name"
+                helperText={(errors && errors.lastName) ? errors.lastName[0] : 'Pressione enter para salvar seu sobrenome'}
+                label="Sobrenome"
                 placeholder={userData.lastName}
                 required
                 type="text"
@@ -1168,8 +1168,8 @@ class AccountTab extends Component {
             {showingField !== 'last-name' &&
               <>
                 <ListItemText
-                  primary="Last name"
-                  secondary={userData.lastName ? userData.lastName : 'You don’t have a last name'}
+                  primary="Sobrenome"
+                  secondary={userData.lastName ? userData.lastName : 'Você não tem um sobrenome'}
                 />
 
                 <ListItemSecondaryAction>
@@ -1206,7 +1206,7 @@ class AccountTab extends Component {
 
             {!userData.username &&
               <ListItemIcon>
-                <Tooltip title="No username">
+                <Tooltip title="Nenhum Usuário">
                   <WarningIcon color="error" />
                 </Tooltip>
               </ListItemIcon>
@@ -1219,8 +1219,8 @@ class AccountTab extends Component {
                 disabled={performingAction}
                 error={!!(errors && errors.username)}
                 fullWidth
-                helperText={(errors && errors.username) ? errors.username[0] : 'Press Enter to change your username'}
-                label="Username"
+                helperText={(errors && errors.username) ? errors.username[0] : 'Pressione enter para salvar seu usuário'}
+                label="Usuário"
                 placeholder={userData.username}
                 required
                 type="text"
@@ -1237,8 +1237,8 @@ class AccountTab extends Component {
             {showingField !== 'username' &&
               <>
                 <ListItemText
-                  primary="Username"
-                  secondary={userData.username ? userData.username : 'You don’t have a username'}
+                  primary="Usuário"
+                  secondary={userData.username ? userData.username : 'Você não tem um usuário'}
                 />
 
                 <ListItemSecondaryAction>
@@ -1293,7 +1293,7 @@ class AccountTab extends Component {
 
             {!user.email &&
               <ListItemIcon>
-                <Tooltip title="No e-mail address">
+                <Tooltip title="Nenhum endereço de e-mail">
                   <WarningIcon color="error" />
                 </Tooltip>
               </ListItemIcon>
@@ -1306,8 +1306,8 @@ class AccountTab extends Component {
                 disabled={performingAction}
                 error={!!(errors && errors.emailAddress)}
                 fullWidth
-                helperText={(errors && errors.emailAddress) ? errors.emailAddress[0] : 'Press Enter to change your e-mail address'}
-                label="E-mail address"
+                helperText={(errors && errors.emailAddress) ? errors.emailAddress[0] : 'Pressione enter para salvar seu endereço de e-mail'}
+                label="Endereço de e-mail"
                 placeholder={user.email}
                 required
                 type="email"
@@ -1324,8 +1324,8 @@ class AccountTab extends Component {
             {showingField !== 'email-address' &&
               <>
                 <ListItemText
-                  primary="E-mail address"
-                  secondary={user.email ? user.email : 'You don’t have an e-mail address'}
+                  primary="Endereço de e-mail"
+                  secondary={user.email ? user.email : 'Você não tem um endereço de e-mail'}
                 />
 
                 {(user.email && !user.emailVerified) &&
@@ -1376,14 +1376,14 @@ class AccountTab extends Component {
 
             <Hidden xsDown>
               <ListItemText
-                primary="Signed in"
+                primary="Último login"
                 secondary={moment(user.metadata.lastSignInTime).format('LLLL')}
               />
             </Hidden>
 
             <Hidden smUp>
               <ListItemText
-                primary="Signed in"
+                primary="Último login"
                 secondary={moment(user.metadata.lastSignInTime).format('llll')}
               />
             </Hidden>
@@ -1401,12 +1401,12 @@ class AccountTab extends Component {
             </Hidden>
 
             <ListItemText
-              primary="Delete account"
-              secondary="Accounts can’t be recovered"
+              primary="Apagar a conta"
+              secondary="Não é possivel recuperar"
             />
 
             <ListItemSecondaryAction>
-              <Button color="secondary" disabled={performingAction} variant="contained" onClick={this.deleteAccount}>Delete</Button>
+              <Button color="secondary" disabled={performingAction} variant="contained" onClick={this.deleteAccount}>Apagar</Button>
             </ListItemSecondaryAction>
           </ListItem>
         </List>

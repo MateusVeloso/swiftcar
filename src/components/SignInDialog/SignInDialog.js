@@ -252,9 +252,9 @@ class SignInDialog extends Component {
     } = this.state;
 
     return (
-      <Dialog fullWidth maxWidth="sm" {...dialogProps} onKeyPress={this.handleKeyPress} onExited={this.handleExited}>
+      <Dialog scroll="body" fullWidth maxWidth="sm" {...dialogProps} onKeyPress={this.handleKeyPress} onExited={this.handleExited}>
         <DialogTitle>
-          Sign in to your account
+          Faça login usando sua conta:
         </DialogTitle>
 
         <DialogContent>
@@ -276,13 +276,13 @@ class SignInDialog extends Component {
                 <Grid container direction="column" spacing={2}>
                   <Grid item xs>
                     <TextField
-                      autoComplete="email"
+                      autoComplete="new-email"
                       disabled={performingAction}
                       error={!!(errors && errors.emailAddress)}
                       fullWidth
                       helperText={(errors && errors.emailAddress) ? errors.emailAddress[0] : ''}
-                      label="E-mail address"
-                      placeholder="john@doe.com"
+                      label="Informe seu e-mail"
+                      placeholder="mateus@teste.com"
                       required
                       type="email"
                       value={emailAddress}
@@ -294,12 +294,12 @@ class SignInDialog extends Component {
 
                   <Grid item xs>
                     <TextField
-                      autoComplete="current-password"
+                      autoComplete="new-password"
                       disabled={performingAction}
                       error={!!(errors && errors.password)}
                       fullWidth
                       helperText={(errors && errors.password) ? errors.password[0] : ''}
-                      label="Password"
+                      label="Informe sua senha"
                       placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
                       required
                       type="password"
@@ -330,8 +330,8 @@ class SignInDialog extends Component {
                   error={!!(errors && errors.emailAddress)}
                   fullWidth
                   helperText={(errors && errors.emailAddress) ? errors.emailAddress[0] : ''}
-                  label="E-mail address"
-                  placeholder="john@doe.com"
+                  label="Informe seu e-mail"
+                  placeholder="mateus@teste.com"
                   required
                   type="email"
                   value={emailAddress}
@@ -348,7 +348,7 @@ class SignInDialog extends Component {
                   error={!!(errors && errors.password)}
                   fullWidth
                   helperText={(errors && errors.password) ? errors.password[0] : ''}
-                  label="Password"
+                  label="Informe sua senha"
                   placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
                   required
                   type="password"
@@ -363,7 +363,7 @@ class SignInDialog extends Component {
         </DialogContent>
 
         <DialogActions>
-          <Button color="primary" onClick={dialogProps.onClose}>Cancel</Button>
+          <Button color="primary" onClick={dialogProps.onClose}>Cancelar</Button>
 
           <Button
             color="primary"
@@ -371,7 +371,7 @@ class SignInDialog extends Component {
             variant="outlined"
 
             onClick={this.resetPassword}>
-            Reset password
+            Recuperar senha
           </Button>
 
           <Button
@@ -380,7 +380,7 @@ class SignInDialog extends Component {
             variant="contained"
 
             onClick={this.signIn}>
-            Sign in
+            Entrar
           </Button>
         </DialogActions>
       </Dialog>

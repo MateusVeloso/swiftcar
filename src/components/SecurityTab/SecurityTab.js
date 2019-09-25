@@ -227,8 +227,8 @@ class SecurityTab extends Component {
                 disabled={performingAction}
                 error={!!(errors && errors.password)}
                 fullWidth
-                helperText={(errors && errors.password) ? errors.password[0] : 'Press Enter to change your password'}
-                label="Password"
+                helperText={(errors && errors.password) ? errors.password[0] : 'Pressione enter para salvar sua senha'}
+                label="Senha"
                 required
                 type="password"
                 value={password}
@@ -248,8 +248,8 @@ class SecurityTab extends Component {
                 disabled={performingAction}
                 error={!!(errors && errors.passwordConfirmation)}
                 fullWidth
-                helperText={(errors && errors.passwordConfirmation) ? errors.passwordConfirmation[0] : 'Press Enter to change your password'}
-                label="Password confirmation"
+                helperText={(errors && errors.passwordConfirmation) ? errors.passwordConfirmation[0] : 'Pressione enter para salvar sua senha'}
+                label="Confirme sua senha"
                 required
                 type="password"
                 value={passwordConfirmation}
@@ -267,14 +267,14 @@ class SecurityTab extends Component {
                 <Hidden xsDown>
                   <ListItemText
                     primary="Password"
-                    secondary={userData.lastPasswordChange ? `Last changed ${moment(userData.lastPasswordChange.toDate()).format('LL')}` : 'Never changed'}
+                    secondary={userData.lastPasswordChange ? `Last changed ${moment(userData.lastPasswordChange.toDate()).format('LL')}` : 'Nunca foi modificado'}
                   />
                 </Hidden>
 
                 <Hidden smUp>
                   <ListItemText
                     primary="Password"
-                    secondary={userData.lastPasswordChange ? `Last changed ${moment(userData.lastPasswordChange.toDate()).format('ll')}` : 'Never changed'}
+                    secondary={userData.lastPasswordChange ? `Last changed ${moment(userData.lastPasswordChange.toDate()).format('ll')}` : 'Nunca foi modificado'}
                   />
                 </Hidden>
 

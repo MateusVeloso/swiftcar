@@ -41,25 +41,25 @@ const tabs = [
   {
     key: 'account',
     icon: <AccountCircleIcon />,
-    label: 'Account'
+    label: 'Sua Conta'
   },
 
   {
     key: 'appearance',
     icon: <PaletteIcon />,
-    label: 'Appearance'
+    label: 'Aparência'
   },
 
   {
     key: 'connections',
     icon: <LinkIcon />,
-    label: 'Connections'
+    label: 'Conexões'
   },
 
   {
     key: 'security',
     icon: <SecurityIcon />,
-    label: 'Security'
+    label: 'Segurança'
   }
 ];
 
@@ -109,7 +109,7 @@ class SettingsDialog extends Component {
       <Dialog {...dialogProps}>
         <DialogTitle disableTypography>
           <Typography variant="h6">
-            Settings
+            Configurações
           </Typography>
 
           <Tooltip title="Close">

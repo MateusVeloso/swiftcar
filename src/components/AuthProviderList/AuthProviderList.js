@@ -33,32 +33,32 @@ class AuthProviderList extends Component {
     const { onAuthProviderClick } = this.props;
 
     const authProviders = [
-      {
-        providerId: 'facebook.com',
-        theme: createMuiTheme({
-          palette: {
-            primary: {
-              main: '#3c5a99',
-              contrastText: '#ffffff'
-            }
-          }
-        }),
-        icon: <FacebookBoxIcon />,
-        name: 'Facebook'
-      },
-      {
-        providerId: 'github.com',
-        theme: createMuiTheme({
-          palette: {
-            primary: {
-              main: '#24292e',
-              contrastText: '#ffffff'
-            }
-          }
-        }),
-        icon: <GitHubCircleIcon />,
-        name: 'GitHub'
-      },
+      // {
+      //   providerId: 'facebook.com',
+      //   theme: createMuiTheme({
+      //     palette: {
+      //       primary: {
+      //         main: '#3c5a99',
+      //         contrastText: '#ffffff'
+      //       }
+      //     }
+      //   }),
+      //   icon: <FacebookBoxIcon />,
+      //   name: 'Facebook'
+      // },
+      // {
+      //   providerId: 'github.com',
+      //   theme: createMuiTheme({
+      //     palette: {
+      //       primary: {
+      //         main: '#24292e',
+      //         contrastText: '#ffffff'
+      //       }
+      //     }
+      //   }),
+      //   icon: <GitHubCircleIcon />,
+      //   name: 'GitHub'
+      // },
       {
         providerId: 'google.com',
         theme: createMuiTheme({
@@ -71,46 +71,46 @@ class AuthProviderList extends Component {
         }),
         icon: <GoogleIcon />,
         name: 'Google'
-      },
-      {
-        providerId: 'microsoft.com',
-        theme: createMuiTheme({
-          palette: {
-            primary: {
-              main: '#f65314',
-              contrastText: '#ffffff'
-            }
-          }
-        }),
-        icon: <MicrosoftIcon />,
-        name: 'Microsoft'
-      },
-      {
-        providerId: 'twitter.com',
-        theme: createMuiTheme({
-          palette: {
-            primary: {
-              main: '#1da1f2',
-              contrastText: '#ffffff'
-            }
-          }
-        }),
-        icon: <TwitterIcon />,
-        name: 'Twitter'
-      },
-      {
-        providerId: 'yahoo.com',
-        theme: createMuiTheme({
-          palette: {
-            primary: {
-              main: '#410093',
-              contrastText: '#ffffff'
-            }
-          }
-        }),
-        icon: <YahooIcon />,
-        name: 'Yahoo'
       }
+      // {
+      //   providerId: 'microsoft.com',
+      //   theme: createMuiTheme({
+      //     palette: {
+      //       primary: {
+      //         main: '#f65314',
+      //         contrastText: '#ffffff'
+      //       }
+      //     }
+      //   }),
+      //   icon: <MicrosoftIcon />,
+      //   name: 'Microsoft'
+      // },
+      // {
+      //   providerId: 'twitter.com',
+      //   theme: createMuiTheme({
+      //     palette: {
+      //       primary: {
+      //         main: '#1da1f2',
+      //         contrastText: '#ffffff'
+      //       }
+      //     }
+      //   }),
+      //   icon: <TwitterIcon />,
+      //   name: 'Twitter'
+      // },
+      // {
+      //   providerId: 'yahoo.com',
+      //   theme: createMuiTheme({
+      //     palette: {
+      //       primary: {
+      //         main: '#410093',
+      //         contrastText: '#ffffff'
+      //       }
+      //     }
+      //   }),
+      //   icon: <YahooIcon />,
+      //   name: 'Yahoo'
+      // }
     ];
 
     return (

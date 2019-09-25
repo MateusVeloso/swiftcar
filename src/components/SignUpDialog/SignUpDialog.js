@@ -287,9 +287,9 @@ class SignUpDialog extends Component {
     } = this.state;
 
     return (
-      <Dialog fullWidth maxWidth="md" {...dialogProps} onKeyPress={this.handleKeyPress} onExited={this.handleExited}>
+      <Dialog scroll="body" fullWidth maxWidth="md" {...dialogProps} onKeyPress={this.handleKeyPress} onExited={this.handleExited}>
         <DialogTitle>
-          Sign up for an account
+          Cadastre-se utilizando sua conta:
         </DialogTitle>
 
         <DialogContent className={classes.dialogContent}>
@@ -316,8 +316,8 @@ class SignUpDialog extends Component {
                       error={!!(errors && errors.firstName)}
                       fullWidth
                       helperText={(errors && errors.firstName) ? errors.firstName[0] : ''}
-                      label="First name"
-                      placeholder="John"
+                      label="Primeiro nome"
+                      placeholder="Mateus"
                       required
                       type="text"
                       value={firstName}
@@ -334,8 +334,8 @@ class SignUpDialog extends Component {
                       error={!!(errors && errors.lastName)}
                       fullWidth
                       helperText={(errors && errors.lastName) ? errors.lastName[0] : ''}
-                      label="Last name"
-                      placeholder="Doe"
+                      label="Ultimo nome"
+                      placeholder="de Paula"
                       required
                       type="text"
                       value={lastName}
@@ -354,8 +354,8 @@ class SignUpDialog extends Component {
                       error={!!(errors && errors.username)}
                       fullWidth
                       helperText={(errors && errors.username) ? errors.username[0] : ''}
-                      label="Username"
-                      placeholder="John"
+                      label="Usuário"
+                      placeholder="mateus"
                       required
                       type="text"
                       value={username}
@@ -369,13 +369,13 @@ class SignUpDialog extends Component {
                 <Grid container spacing={4}>
                   <Grid item xs>
                     <TextField
-                      autoComplete="email"
+                      autoComplete="new-email"
                       disabled={performingAction}
                       error={!!(errors && errors.emailAddress)}
                       fullWidth
                       helperText={(errors && errors.emailAddress) ? errors.emailAddress[0] : ''}
-                      label="E-mail address"
-                      placeholder="john@doe.com"
+                      label="E-mail"
+                      placeholder="mateus@teste.com"
                       required
                       type="email"
                       value={emailAddress}
@@ -387,13 +387,13 @@ class SignUpDialog extends Component {
 
                   <Grid item xs>
                     <TextField
-                      autoComplete="email"
+                      autoComplete="new-email"
                       disabled={performingAction}
                       error={!!(errors && errors.emailAddressConfirmation)}
                       fullWidth
                       helperText={(errors && errors.emailAddressConfirmation) ? errors.emailAddressConfirmation[0] : ''}
-                      label="E-mail address confirmation"
-                      placeholder="john@doe.com"
+                      label="Confirme seu e-mail"
+                      placeholder="mateus@teste.com"
                       required
                       type="email"
                       value={emailAddressConfirmation}
@@ -412,7 +412,7 @@ class SignUpDialog extends Component {
                       error={!!(errors && errors.password)}
                       fullWidth
                       helperText={(errors && errors.password) ? errors.password[0] : ''}
-                      label="Password"
+                      label="Senha"
                       placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
                       required
                       type="password"
@@ -430,7 +430,7 @@ class SignUpDialog extends Component {
                       error={!!(errors && errors.passwordConfirmation)}
                       fullWidth
                       helperText={(errors && errors.passwordConfirmation) ? errors.passwordConfirmation[0] : ''}
-                      label="Password confirmation"
+                      label="Confirme sua senha"
                       placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
                       required
                       type="password"
@@ -461,8 +461,8 @@ class SignUpDialog extends Component {
                   error={!!(errors && errors.firstName)}
                   fullWidth
                   helperText={(errors && errors.firstName) ? errors.firstName[0] : ''}
-                  label="First name"
-                  placeholder="John"
+                  label="Primeiro nome"
+                  placeholder="Mateus"
                   required
                   type="text"
                   value={firstName}
@@ -479,8 +479,8 @@ class SignUpDialog extends Component {
                   error={!!(errors && errors.lastName)}
                   fullWidth
                   helperText={(errors && errors.lastName) ? errors.lastName[0] : ''}
-                  label="Last name"
-                  placeholder="Doe"
+                  label="Ultimo nome"
+                  placeholder="de Paula"
                   required
                   type="text"
                   value={lastName}
@@ -497,7 +497,7 @@ class SignUpDialog extends Component {
                   error={!!(errors && errors.username)}
                   fullWidth
                   helperText={(errors && errors.username) ? errors.username[0] : ''}
-                  label="Username"
+                  label="Usuário"
                   placeholder="John"
                   required
                   type="text"
@@ -515,7 +515,7 @@ class SignUpDialog extends Component {
                   error={!!(errors && errors.emailAddress)}
                   fullWidth
                   helperText={(errors && errors.emailAddress) ? errors.emailAddress[0] : ''}
-                  label="E-mail address"
+                  label="E-mail"
                   placeholder="john@doe.com"
                   required
                   type="email"
@@ -533,7 +533,7 @@ class SignUpDialog extends Component {
                   error={!!(errors && errors.emailAddressConfirmation)}
                   fullWidth
                   helperText={(errors && errors.emailAddressConfirmation) ? errors.emailAddressConfirmation[0] : ''}
-                  label="E-mail address confirmation"
+                  label="Confirme seu e-mail"
                   placeholder="john@doe.com"
                   required
                   type="email"
@@ -551,7 +551,7 @@ class SignUpDialog extends Component {
                   error={!!(errors && errors.password)}
                   fullWidth
                   helperText={(errors && errors.password) ? errors.password[0] : ''}
-                  label="Password"
+                  label="Senha"
                   placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
                   required
                   type="password"
@@ -569,7 +569,7 @@ class SignUpDialog extends Component {
                   error={!!(errors && errors.passwordConfirmation)}
                   fullWidth
                   helperText={(errors && errors.passwordConfirmation) ? errors.passwordConfirmation[0] : ''}
-                  label="Password confirmation"
+                  label="Confirme sua senha"
                   placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
                   required
                   type="password"
@@ -584,7 +584,7 @@ class SignUpDialog extends Component {
         </DialogContent>
 
         <DialogActions>
-          <Button color="primary" onClick={dialogProps.onClose}>Cancel</Button>
+          <Button color="primary" onClick={dialogProps.onClose}>Cancelar</Button>
 
           <Button
             color="primary"
@@ -601,7 +601,7 @@ class SignUpDialog extends Component {
             variant="contained"
 
             onClick={this.signUp}>
-            Sign up
+            Cadastrar
           </Button>
         </DialogActions>
       </Dialog>

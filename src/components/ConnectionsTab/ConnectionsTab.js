@@ -86,42 +86,42 @@ class ConnectionsTab extends Component {
     const { performingAction } = this.state;
 
     const authProviders = [
-      {
-        providerId: 'facebook.com',
-        color: '#3c5a99',
-        icon: <FacebookBoxIcon />,
-        name: 'Facebook'
-      },
-      {
-        providerId: 'github.com',
-        color: '#24292e',
-        icon: <GitHubCircleIcon />,
-        name: 'GitHub'
-      },
+      // {
+      //   providerId: 'facebook.com',
+      //   color: '#3c5a99',
+      //   icon: <FacebookBoxIcon />,
+      //   name: 'Facebook'
+      // },
+      // {
+      //   providerId: 'github.com',
+      //   color: '#24292e',
+      //   icon: <GitHubCircleIcon />,
+      //   name: 'GitHub'
+      // },
       {
         providerId: 'google.com',
         color: '#4285f4',
         icon: <GoogleIcon />,
         name: 'Google'
-      },
-      {
-        providerId: 'microsoft.com',
-        color: '#f65314',
-        icon: <MicrosoftIcon />,
-        name: 'Microsoft'
-      },
-      {
-        providerId: 'twitter.com',
-        color: '#1da1f2',
-        icon: <TwitterIcon />,
-        name: 'Twitter'
-      },
-      {
-        providerId: 'yahoo.com',
-        color: '#410093',
-        icon: <YahooIcon />,
-        name: 'Yahoo'
       }
+      // {
+      //   providerId: 'microsoft.com',
+      //   color: '#f65314',
+      //   icon: <MicrosoftIcon />,
+      //   name: 'Microsoft'
+      // },
+      // {
+      //   providerId: 'twitter.com',
+      //   color: '#1da1f2',
+      //   icon: <TwitterIcon />,
+      //   name: 'Twitter'
+      // },
+      // {
+      //   providerId: 'yahoo.com',
+      //   color: '#410093',
+      //   icon: <YahooIcon />,
+      //   name: 'Yahoo'
+      // }
     ];
 
     return (
